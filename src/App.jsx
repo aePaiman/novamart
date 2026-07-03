@@ -11,6 +11,7 @@ import Cart from './pages/Cart.jsx'
 import Checkout from './pages/Checkout.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
+import ForgotPassword from './pages/ForgotPassword.jsx'
 import Wishlist from './pages/Wishlist.jsx'
 import Admin from './pages/Admin.jsx'
 import OrderHistory from './pages/OrderHistory.jsx'
@@ -66,9 +67,12 @@ function App() {
         />
         <main className="pt-16">
           <Routes>
+            {/* Public Routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
             
+            {/* Protected Routes */}
             <Route path="/" element={
               <ProtectedRoute>
                 <Home />
@@ -100,6 +104,7 @@ function App() {
               </ProtectedRoute>
             } />
             
+            {/* Admin Routes */}
             <Route path="/admin" element={
               <AdminRoute>
                 <Admin />

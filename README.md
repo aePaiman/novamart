@@ -1,16 +1,74 @@
-# React + Vite
+# 🛍️ NovaMart - E-Commerce Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A full-featured, modern e-commerce platform built with React, Redux Toolkit, and Tailwind CSS.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛒 Shopping Experience
+- **Product Catalog** - Browse products with categories and filters
+- **Shopping Cart** - Add/remove items, adjust quantities, save cart locally
+- **Wishlist** - Save favorite products for later
+- **Product Search** - Search products by name
+- **Product Details** - View detailed product information with images
+- **Checkout System** - Complete orders with address and payment details
+- **Receipt Generation** - Download or print order receipts as images
 
-## Expanding the ESLint configuration
+### 🔐 User Management
+- **Authentication** - Login/Register with validation
+- **Role-Based Access** - Regular users and Admin roles      -
+- **Profile Management** - User profiles with order history
+- **Guest Checkout** - Quick checkout for new users
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👨‍💼 Admin Features
+- **Product Management** - Add, edit, and delete products
+- **Image Upload** - Upload local images for products
+- **Order History Dashboard** - Track all transactions
+- **Analytics** - View orders by time period (24h, week, month)
+- **Customer Insights** - See unique customers and total revenue
+
+### 🎨 UI/UX
+- **Dark/Light Mode** - Toggle between themes with system preference
+- **Responsive Design** - Works on mobile, tablet, and desktop
+- **Smooth Animations** - Framer Motion for fluid interactions
+- **Toast Notifications** - Real-time feedback for actions
+- **Loading States** - Skeleton loaders for better UX
+
+## 🚀 Technologies
+
+### Frontend
+- **React 18** - UI library with hooks
+- **Redux Toolkit** - State management
+- **React Router v6** - Navigation and routing
+- **Tailwind CSS** - Styling and theming
+- **Framer Motion** - Animations and transitions
+
+### Tools & Libraries
+- **React Hook Form** - Form validation
+- **Zod** - Schema validation
+- **React Hot Toast** - Toast notifications
+- **React Icons** - Icon library
+- **html2canvas** - Receipt image generation
+- **Axios** - API calls
+
+### Development
+- **Vite** - Fast build tool
+- **json-server** - Mock REST API
+- **ESLint** - Code linting
+- **Concurrently** - Run multiple scripts
+
+
+
+## 🏃‍♂️ Installation & Setup
+
+### Prerequisites
+- **Node.js** (v14 or higher)
+- **npm** or **yarn**
+- **Git** (optional, for cloning)
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/aePaiman/novamart.git
+cd novamart

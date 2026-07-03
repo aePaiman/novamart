@@ -219,9 +219,9 @@
   "users": [
     {
       "id": 1,
-      "name": "John Doe",
+      "name": "Admin",
       "email": "john@example.com",
-      "password": "password123",
+      "password": "password123456",
       "address": "123 Main St, New York, NY 10001"
     },
     {

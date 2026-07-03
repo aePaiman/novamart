@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { loginUser } from '../store/slices/authSlice'
+import { loginUser } from '../store/slices/authSlice.js'
 import { FaEnvelope, FaLock, FaSpinner } from 'react-icons/fa'
 
 const Login = () => {
@@ -23,7 +23,6 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     
-    // Validation
     const newErrors = {}
     if (!formData.email) newErrors.email = 'Email is required'
     if (!formData.password) newErrors.password = 'Password is required'
@@ -104,9 +103,9 @@ const Login = () => {
                   Remember me
                 </span>
               </label>
-              <a href="#" className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
+              <Link to="/forgot-password" className="text-sm text-blue-600 dark:text-blue-400 hover:underline">
                 Forgot password?
-              </a>
+              </Link>
             </div>
 
             <button
@@ -131,7 +130,9 @@ const Login = () => {
                 Sign Up
               </Link>
             </p>
-            
+            <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">
+              Demo: john@example.com / password123
+            </p>
           </div>
         </div>
       </motion.div>
